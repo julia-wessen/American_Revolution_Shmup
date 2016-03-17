@@ -1,0 +1,89 @@
+Julia Wessen 
+IGME 202 Section 1 with Erin
+9/27/15
+----------------------------------------
+Asteroids Project
+
+List of user functionality: 
+You are america and you have to fight great britain in the american revolution. 
+You are the ship that starts off in the intro screen. You can move around using
+w,a, and d. W moves you forward in the direction you are facing. A rotates you
+to the left(counterclockwise) and D rotates you to the right (clockwise). You
+are to shoot great britains when they spawn. They will break into tea cups
+(their true form!). Make sure you shoot them down with your freedom bullets 
+(hamburgers!). Shoot with the 'f' key.  You have 3 lives. When you're out of lives, it's game over. From
+there, you can either quit or restart the game. Press 'n' to quit and 'y' to 
+replay the game! 
+
+Reasoning behind design choices:
+I was thinking of something cool and unique to do for my asteroids. I didn't just
+want to do something simple. I wanted to do something fun and big! So I thought
+about making all my things circles and then thought of the cupcakes of the different
+flags I made one year. Then I got the idea of the american revolution, because
+I love the american revolution. I was originally just going to do flags, but
+I realized a need something to indicate which direction the bullets would
+come out from on the 'ship'. So I drew a gun on the America flag. Since PImage
+requires transformations and push/pop matrix, I decided to make a
+new design (tea cups)instead of smaller great britains for my smaller asteroids 
+since PImage would always display the same size image even if you pass in 
+different width and height dimensions. (Spoiler alert for above 1000 points 
+surprise! In high school I had a fun time drawing our founding fathers of america
+making out and scaring my friends, so I thought putting that for a 'surprise'
+would be funny).
+
+Brief Description of above and beyond features: MAY CONTAIN SPOILERS. 
+PLAY GAME FIRST. YOU HAVE BEEN WARNED. 
+	I added an Immunity Feature!: 
+		If you lose a life, just start the game, or defeat all enemies on 
+		screen, then you gain 'immunity'. This lets you pass through asteroids
+		without losing a life. This is to prevent random asteroids from spawning
+		and hitting you when they respawn/spawn so you don't lose all your points.
+	Bullet expiration!: 
+		You have 3 bullets you can fire at one time, and they also have a expire time so 
+		they wont travel through space and never spoil (McDonalds isn't
+		THAT bad ha ha). 
+	If you get to 1000 points, something special happens!!!!:
+		If you want to ruin the surprise, basically the background changes
+		and different music plays and the bullets change too, all based
+		on the theme of the background.
+	Music!: 
+		I added music. The first song that plays when you're in normal
+		mode, or you just started the game, is from Liberty's Kids. 
+		The next song is "Magnet" which is a japanese sexy song. 
+		The game over song is "The Eternal Forest" which is a file
+		I found in my music folder while searching for unhappy music. 
+	Game Over screen with options!:
+		From the game over screen you can restart the game or you
+		can simply exit the game and move on with life. You start again
+		with 6 enemies on screen everytime you restart once dying. 
+	Extra British!:
+		Once you clear all the british on the screen, they will all 
+		respawn, except there will be one more than there was before to make it 
+		increasingly harder. 
+	It's looks like a fun, "wow" and interesting game:
+		Enough said.   
+	I DREW EVERYTHING MYSELF:
+		No internet graphics! Well, only the background for the 'surprise'
+		background, but the ship, bullet, and enemy sprites and backgrounds
+		are all my artwork!!!
+
+
+Requirements not completed: 
+When looking at the gradesheet, the ONLY things that you might NOT NOTICE 
+IMMIDENTLY OR THINGS I WANT TO CLARIFY ARE..
+	1) Test for ship-asteroid collision
+		a) When everything turns grey, this is the immunity 
+		fuction I put into the game. Collision between ship and 
+		asteroid is, at that time, not working because you are immune. 
+		Collision between asteroid and bullet is still active, though.
+		Immunity only lasts a short time. It is added so when 
+		asteroids spawn when they're all gone or you've gotten
+		hit and have to restart, you don't automatically have to 
+		restart because an asteroid happened to spawn in your general
+		position. When you start, you start in immune mode, so 
+		ship-asteroid collision is off then! (Not a collision bug!). 
+	3) Space bar fires bullets
+		a) I think it was fine to use the 'f' key to fire bullets
+		instead of the space bar. 
+	
+Besides that I 100% believe I did all the requirements.
